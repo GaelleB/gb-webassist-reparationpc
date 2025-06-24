@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './Logo GB WebAssist.webp';
 import './App.css';
 
 function App() {
