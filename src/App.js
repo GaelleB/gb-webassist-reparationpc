@@ -19,7 +19,7 @@ function App() {
         {/* HERO */}
         <section id="hero" className="hero">
           <h1>Dépannage informatique</h1>
-          <p>À domicile dans la Marne/Haute-Marne et à distance partout en France.</p>
+          <p>À domicile dans la Marne/Haute-Marne.</p>
         </section>
 
         {/* PRESTATIONS */}
