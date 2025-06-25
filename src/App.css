@@ -74,8 +74,16 @@ body {
 .card {
   background: var(--background-body);
   padding: 2rem;
+  border: 2px solid var(--primary-color);
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-color-1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
