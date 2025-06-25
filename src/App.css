@@ -55,6 +55,7 @@ img {
   font-family: var(--font-heading);
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .hero p {
@@ -71,6 +72,7 @@ img {
 
 .services h2 {
   font-family: var(--font-heading);
+  color: var(--primary-color);
   margin-bottom: 2rem;
 }
 
@@ -116,6 +118,7 @@ img {
 
 .contact h2 {
   font-family: var(--font-heading);
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
