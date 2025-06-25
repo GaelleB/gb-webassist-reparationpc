@@ -1,17 +1,123 @@
+:root {
+  --background-body: #2f3239;
+  --background-dark: #383c45;
+  --primary-color: #1ab1dd;
+  --secondary-color: #f1cd52;
+  --accent-color-1: #1fcfb7;
+  --accent-color-2: #11f09b;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+  --font-heading: 'EB Garamond', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: var(--font-body);
+  background: var(--background-body);
+  color: var(--text-light);
+  scroll-behavior: smooth;
 }
 
 .navbar {
+  background: var(--background-dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
-nav a {
-  margin-left: 1rem;
+.navbar nav a {
+  margin-left: 1.5rem;
   text-decoration: none;
-  color: black;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: var(--accent-color-1);
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.services {
+  padding: 4rem 2rem;
+  background: var(--background-dark);
+  text-align: center;
+}
+
+.services h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: var(--background-body);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-family: var(--font-heading);
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.contact h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--background-body);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+footer {
+  background: var(--background-dark);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
 }
