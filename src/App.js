@@ -19,25 +19,30 @@ function App() {
         {/* HERO */}
         <section id="hero" className="hero">
           <h1>Dépannage informatique</h1>
-          <p>À domicile dans la Marne et à distance partout en France.</p>
-          <a href="https://calendly.com/gaelleboucher-dev/30min" className="btn">Prendre rendez-vous</a>
+          <p>À domicile dans la Marne/Haute-Marne et à distance partout en France.</p>
         </section>
 
         {/* PRESTATIONS */}
         <section id="services" className="services">
           <h2>Prestations express</h2>
           <div className="cards">
+            {/* Card 1 */}
             <div className="card">
               <h3>Réparation & optimisation</h3>
-              <p>Nettoyage, lenteurs, mises à jour, blocages, erreurs…</p>
+              <p>PC lent, virus, erreurs…</p>
+              <p className="price">À partir de 40 €</p>
             </div>
+
             <div className="card">
               <h3>Installation & configuration</h3>
-              <p>Imprimante, box Internet, logiciels, ordinateur neuf…</p>
+              <p>Windows, imprimante, box…</p>
+              <p className="price">À partir de 50 €</p>
             </div>
+
             <div className="card">
               <h3>Sécurité & sauvegarde</h3>
-              <p>Suppression de virus, protection, récupération de données…</p>
+              <p>Antivirus, backup, récupération…</p>
+              <p className="price">À partir de 30 €</p>
             </div>
           </div>
         </section>
@@ -48,7 +53,6 @@ function App() {
           <p>📍 Vanault-les-Dames (51) et à distance</p>
           <p>📞 <a href="tel:+33674841793">06 74 94 17 93</a></p>
           <p>✉️ <a href="mailto:gaelleboucher.dev@gmail.com">gaelleboucher.dev@gmail.com</a></p>
-          <a href="https://calendly.com/gaelleboucher-dev/30min" className="btn">Prendre rendez-vous</a>
         </section>
       </main>
 

@@ -19,6 +19,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* NAVBAR */
 .navbar {
   background: var(--background-dark);
   display: flex;
@@ -32,12 +33,14 @@ body {
   text-decoration: none;
   color: var(--text-light);
   font-weight: 500;
+  transition: color 0.2s;
 }
 
 .navbar nav a:hover {
   color: var(--accent-color-1);
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -54,6 +57,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* SERVICES */
 .services {
   padding: 4rem 2rem;
   background: var(--background-dark);
@@ -78,20 +82,28 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: var(--accent-color-1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
   font-family: var(--font-heading);
   color: var(--secondary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
+.card .price {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+
+/* CONTACT */
 .contact {
   text-align: center;
   padding: 4rem 2rem;
@@ -106,6 +118,7 @@ body {
   margin: 0.5rem 0;
 }
 
+/* BUTTONS */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -115,13 +128,15 @@ body {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
+  background: var(--accent-color-1);
 }
 
+/* FOOTER */
 footer {
   background: var(--background-dark);
   text-align: center;
