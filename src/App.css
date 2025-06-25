@@ -118,6 +118,16 @@ body {
   margin: 0.5rem 0;
 }
 
+.contact a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+.contact a:hover {
+  color: var(--accent-color-1);
+  text-decoration: underline;
+}
+
 /* BUTTONS */
 .btn {
   display: inline-block;
